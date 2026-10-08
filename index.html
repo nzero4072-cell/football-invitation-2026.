@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ONE NIGHT FRIENDLY PVC FOOTBALL TOURNAMENT 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#06110c;color:#fff;font-family:"Noto Sans Bengali",system-ui,sans-serif;scroll-behavior:smooth}
+body{overflow-x:hidden}.screen{min-height:100svh;position:relative;overflow:hidden}
+#intro{display:grid;place-items:center;background:radial-gradient(circle at 50% 20%,#164d32 0,#07160f 42%,#020806 100%)}
+#intro:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(0,0,0,.85)),url("football-glow.jpg") center/cover;opacity:.28}
+.stadium{position:absolute;inset:auto 0 0;height:32%;background:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 2px,transparent 2px 70px),linear-gradient(#183b22,#07150b);transform:perspective(350px) rotateX(12deg);transform-origin:bottom}
+.intro-card{position:relative;z-index:2;width:min(92%,650px);text-align:center;padding:28px 20px}
+.badge{display:inline-block;border:1px solid #b7e36b;border-radius:999px;padding:7px 16px;color:#d7ff91;letter-spacing:2px;font-size:.75rem;font-weight:800;background:#07180dcc}
+h1{font-size:clamp(2.3rem,10vw,5.5rem);line-height:.98;margin:20px 0 10px;text-shadow:0 8px 35px #000;font-weight:900}
+h1 span{display:block;color:#d8ff66}
+.sub{font-size:clamp(1rem,3vw,1.4rem);opacity:.9}
+.enter{margin-top:28px;border:0;border-radius:999px;padding:15px 28px;font:800 1rem inherit;cursor:pointer;background:#d8ff66;color:#071108;box-shadow:0 0 0 0 rgba(216,255,102,.6);animation:pulse 1.7s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 15px rgba(216,255,102,0)}}
+.ball{position:fixed;z-index:8;top:-70px;font-size:42px;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(720deg)}}
+#main{display:none;background:#06110c}
+.hero{min-height:88svh;display:grid;place-items:center;padding:28px 16px;position:relative;background:linear-gradient(180deg,rgba(0,0,0,.15),#06110c),url("kid.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.18),rgba(0,0,0,.72))}
+.hero-content{position:relative;z-index:2;max-width:850px;text-align:center}
+.kicker{color:#d8ff66;font-weight:800;letter-spacing:2px}
+.hero h2{font-size:clamp(2.1rem,8vw,5rem);line-height:1;margin:12px 0}
+.hero h2 small{display:block;font-size:.38em;letter-spacing:3px;color:#fff;margin-bottom:10px}
+.info-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:25px 0}
+.info{padding:11px 15px;border:1px solid #ffffff2e;background:#07130dcc;backdrop-filter:blur(8px);border-radius:14px;font-weight:700}
+.section{padding:70px 18px;max-width:1000px;margin:auto}
+.title{text-align:center;font-size:clamp(1.8rem,6vw,3rem);margin:0 0 28px}
+.title:after{content:"";display:block;width:70px;height:4px;background:#d8ff66;margin:12px auto;border-radius:99px}
+.quote{font-size:clamp(1.05rem,3.5vw,1.45rem);line-height:1.9;text-align:center;padding:28px;border-radius:24px;background:linear-gradient(135deg,#102c1d,#07130d);border:1px solid #d8ff6630;box-shadow:0 18px 60px #0006}
+.quote strong{color:#d8ff66}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px;border:1px solid #ffffff18;transition:.4s}
+.gallery img:hover{transform:scale(1.025)}
+.poster{height:340px!important}
+.address{text-align:center;padding:25px;border-radius:22px;background:#0d2418;border:1px solid #ffffff18}
+.mapbtn{display:inline-block;margin-top:16px;padding:12px 20px;border-radius:999px;background:#d8ff66;color:#071108;text-decoration:none;font-weight:900}
+footer{text-align:center;padding:35px 15px;color:#a9b8ae}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}.reveal.show{opacity:1;transform:none}
+.kick-transition{position:fixed;inset:0;background:#020805;z-index:20;display:grid;place-items:center;pointer-events:none;opacity:0}
+.kick-transition.active{animation:kick .95s ease-in-out}
+.kick-ball{font-size:85px}
+@keyframes kick{0%{opacity:1}.35%{opacity:1}.70%{opacity:1}.100%{opacity:0}}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery img{height:190px}.poster{height:auto!important}.section{padding:55px 14px}}
+</style>
+</head>
+<body>
+<section id="intro" class="screen">
+  <div class="stadium"></div>
+  <div class="intro-card">
+    <div class="badge">কলকাতা বাউরী সমাজ</div>
+    <h1>ONE NIGHT<br><span>FRIENDLY</span></h1>
+    <div class="sub">PVC FOOTBALL TOURNAMENT 2026</div>
+    <p>একতা • আনন্দ • খেলাধুলা</p>
+    <button class="enter" id="enter">⚽ মাঠে প্রবেশ করুন</button>
+  </div>
+</section>
+
+<div class="kick-transition" id="transition"><div class="kick-ball">⚽</div></div>
+
+<main id="main">
+<section class="hero">
+  <div class="hero-content">
+    <div class="kicker">🏆 ONE NIGHT FRIENDLY</div>
+    <h2><small>PVC</small>FOOTBALL<br>TOURNAMENT 2026</h2>
+    <p>পশ্চিমবঙ্গ বাউরী সমাজ কল্যাণ সমিতি<br>কলকাতা বাউরী সমাজ</p>
+    <div class="info-row">
+      <div class="info">📅 ১০/১০/২০২৬ • শনিবার</div>
+      <div class="info">⏰ সান্ধ্য ৮ ঘটিকায়</div>
+      <div class="info">📍 নতুন শাকবাজার</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h3 class="title">আমাদের ভাবনা</h3>
+  <div class="quote">
+    <strong>“পড়াশোনা যেমন জীবনের পথ দেখায়,<br>তেমনি খেলাধুলাও জীবনকে শক্ত করে।”</strong><br>
+    পড়াশোনার পাশাপাশি খেলাধুলা আমাদের শরীর, মন ও আত্মবিশ্বাসকে আরও শক্তিশালী করে।<br><br>
+    <strong>“নিজের স্বপ্ন পূরণের জন্য লড়াই করতে হবে।<br>এর জন্য ত্যাগ স্বীকার করতে হবে এবং কঠোর পরিশ্রম করতে হবে।”</strong>
+  </div>
+</section>
+
+<section class="section reveal">
+  <h3 class="title">Tournament Moments</h3>
+  <div class="gallery">
+    <img class="poster" src="poster.jpg" alt="Tournament poster">
+    <img class="poster" src="kid.jpg" alt="Football player">
+  </div>
+</section>
+
+<section class="section reveal">
+  <h3 class="title">📍 স্থান ও ঠিকানা</h3>
+  <div class="address">
+    <b>নতুন শাকবাজার</b><br><br>
+    ২ নাম্বার ধাপা রোড, কাছারিপাড়া বাউরী পাড়া,<br>
+    কলকাতা – ১০৫
+    <br>
+    <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=নতুন+শাকবাজার+কলকাতা" target="_blank" rel="noopener">🗺️ Google Maps-এ দেখুন</a>
+  </div>
+</section>
+
+<footer>
+  ⚽ খেলাধুলায় একতা • একতায় শক্তি ⚽<br>
+  <small>পশ্চিমবঙ্গ বাউরী সমাজ কল্যাণ সমিতি • কলকাতা বাউরী সমাজ</small>
+</footer>
+</main>
+
+<script>
+const intro=document.getElementById("intro"), main=document.getElementById("main"), transition=document.getElementById("transition");
+const enter=document.getElementById("enter");
+
+function dropBalls(n=28){
+  for(let i=0;i<n;i++){
+    const b=document.createElement("div"); b.className="ball"; b.textContent="⚽";
+    b.style.left=Math.random()*100+"vw";
+    b.style.setProperty("--drift",(Math.random()*180-90)+"px");
+    b.style.animationDuration=(2.2+Math.random()*2.5)+"s";
+    b.style.animationDelay=(Math.random()*1.3)+"s";
+    document.body.appendChild(b);
+    setTimeout(()=>b.remove(),6000);
+  }
+}
+dropBalls(34);
+
+enter.addEventListener("click",()=>{
+  dropBalls(18);
+  transition.classList.add("active");
+  setTimeout(()=>{
+    intro.style.display="none"; main.style.display="block";
+    transition.classList.remove("active");
+    window.scrollTo(0,0);
+  },700);
+});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
